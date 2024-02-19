@@ -1,7 +1,5 @@
 # 💫 HTTP Rule
 
----
-
 ## ✔️ Method
 
 - GET
@@ -80,8 +78,6 @@
         - 비동기 작업을 수행하는 방안을 고려해 보아야
 
 # 💫 응답 Rule
-
----
 
 ## ✔️ 정상 처리
 
@@ -226,8 +222,6 @@
 
 # 💫 DTO Rule
 
----
-
 ## ✔️ Request
 
 ```java
@@ -286,6 +280,9 @@ public class SettingPageResponse {
     - 객체 생성의 남발을 막고
     - 전달할 값을 저장한다는 DTO의 역할과 책임을 클래스에 부여, 객체 지향적(다만 관점의 차이 있음)
 
+&nbsp;
+&nbsp;
+&nbsp;
 > 참고 : <모든 개발자를 위한 HTTP 웹 기본 지식 강의 - 인프런> ,  
 > https://github.com/InsuranceSystem/InsuranceSystem2,  
 > https://learn.microsoft.com/ko-kr/azure/architecture/best-practices/api-design
