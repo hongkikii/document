@@ -7,7 +7,7 @@ implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
 ```
 
 ## Configuration
-```
+```java
 @OpenAPIDefinition(
         info = @Info(title = "JoA",
         description = "우주 정복 앱 JoA의 API 문서입니다! !",
@@ -99,7 +99,7 @@ public class SwaggerConfig {
 
 
 ## Controller
-```
+```java
     @Operation(summary = "설정 페이지 정보 조회", description = "설정 페이지에서 필요한 정보 조회 API")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "설정 페이지 필요 정보 반환"),
@@ -112,7 +112,7 @@ public class SwaggerConfig {
     }
 ```
 
-```
+```java
     @Operation(summary = "아이디 중복 검증", description = "회원가입 시 중복 아이디가 존재하는지 확인하는 API")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "204", description = "HTTP 상태 코드 반환", content = @Content(schema = @Schema(hidden = true))),
@@ -128,7 +128,7 @@ public class SwaggerConfig {
 
 ## DTO
 ### request
-```
+```java
 @Getter
 @Schema(description = "한 줄 소개 변경 Request")
 @RequiredArgsConstructor
@@ -141,7 +141,7 @@ public class BioRequest {
 ```
 
 ### response
-```
+```java
 @Getter
 @Schema(description = "설정 페이지 Response")
 @Builder(access = AccessLevel.PRIVATE)
