@@ -191,3 +191,9 @@ for image_file in image_files:
 <img width="412" alt="스크린샷 2024-04-02 오후 9 46 47" src="https://github.com/hongkikii/document/assets/110226866/ac2bbdc0-ab1e-4dde-bd6c-63a7f8378f29">
 <img width="413" alt="스크린샷 2024-04-02 오후 9 47 09" src="https://github.com/hongkikii/document/assets/110226866/5c23db1e-1fd3-4f4c-9a60-3cb571b5fbe3">
 <img width="410" alt="스크린샷 2024-04-02 오후 10 07 19" src="https://github.com/hongkikii/document/assets/110226866/43363d9e-c5d0-495f-90a7-ce0dc70bcae9">
+
+<br>
+
+# 참고
+
+https://www.youtube.com/watch?v=em_lOAp8DJE
