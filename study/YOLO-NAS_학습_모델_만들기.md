@@ -40,7 +40,8 @@
 ```
 !wget -O 파일지정이름 https경로
 ```
-복사한 https 경로를 통해 파일을 다운로드 받고, 이름을 지정하여 저장한다.
+복사한 https 경로를 통해 파일을 다운로드 받고, 이름을 지정하여 저장한다.  
+본 문서에서는 uno 카드에 나타난 숫자 데이터를 이용한다.
 
 <br>
 <br>
@@ -140,6 +141,53 @@ model.train(data='yaml파일경로', epochs=100, patience=30, batch=32, imgsz=41
 > imgsz : 이미지의 크기
 
 <br>
+
+(epochs 3 기준 결과)
+
+<img width="1608" alt="스크린샷 2024-04-02 오후 9 36 37" src="https://github.com/hongkikii/document/assets/110226866/eb24b475-59a5-4b7b-a894-efdef3c8ddf5">
+<img width="1611" alt="스크린샷 2024-04-02 오후 9 36 49" src="https://github.com/hongkikii/document/assets/110226866/0a11f85b-f912-4e57-bd70-54517c77fa77">
+<img width="1606" alt="스크린샷 2024-04-02 오후 9 37 54" src="https://github.com/hongkikii/document/assets/110226866/7cc884c3-07f2-4faf-a111-921f70f7ea8d">
+
+
+<br>
 <br>
 
 
+<img width="1653" alt="스크린샷 2024-04-02 오후 9 42 06" src="https://github.com/hongkikii/document/assets/110226866/b9228785-6617-45fc-9a7f-37219f5fe24b">
+<img width="1644" alt="스크린샷 2024-04-02 오후 9 42 19" src="https://github.com/hongkikii/document/assets/110226866/4093f8f4-fe34-4c48-9dea-7bd59886b9e9">
+
+```
+result = model.predict(source='테스트데이터경로', save=True)
+```
+
+테스트 데이터를 이용해 모델을 테스트하고, 결과를 저장한다.
+
+<br>
+<br>
+
+<img width="1656" alt="스크린샷 2024-04-02 오후 9 45 04" src="https://github.com/hongkikii/document/assets/110226866/3cee3c4b-ee6a-41fd-b751-4d011fa61509">
+
+```
+from IPython.display import Image, display
+import os
+
+result_dir = "이미지저장경로"
+image_files = [f for f in os.listdir(result_dir) if f.endswith(".jpg")]
+
+for image_file in image_files:
+    display(Image(os.path.join(result_dir, image_file)))
+```
+모델 테스트 시 **Results saved to**를 통해 결과가 저장된 경로를 확인하고, 해당 경로를 이용해 저장한 이미지를 출력한다.  
+
+<br>
+
+(결과 이미지)
+<br>
+<img width="414" alt="스크린샷 2024-04-02 오후 9 45 22" src="https://github.com/hongkikii/document/assets/110226866/ad23228f-55c2-4116-9b23-5d56e6b76425">
+<img width="415" alt="스크린샷 2024-04-02 오후 9 45 30" src="https://github.com/hongkikii/document/assets/110226866/4c7f2ddc-a16b-415b-b4b7-618cc599013d">
+<img width="413" alt="스크린샷 2024-04-02 오후 9 45 37" src="https://github.com/hongkikii/document/assets/110226866/bcdb4dc5-1a04-4b8c-8eea-7d6bba72b6d2">
+<img width="412" alt="스크린샷 2024-04-02 오후 9 46 32" src="https://github.com/hongkikii/document/assets/110226866/bc5254f6-d18e-48f1-8155-08439239fd96">
+<img width="412" alt="스크린샷 2024-04-02 오후 9 46 39" src="https://github.com/hongkikii/document/assets/110226866/2fb1f276-55ae-4b6c-8839-7ae6ff252a41">
+<img width="412" alt="스크린샷 2024-04-02 오후 9 46 47" src="https://github.com/hongkikii/document/assets/110226866/ac2bbdc0-ab1e-4dde-bd6c-63a7f8378f29">
+<img width="413" alt="스크린샷 2024-04-02 오후 9 47 09" src="https://github.com/hongkikii/document/assets/110226866/5c23db1e-1fd3-4f4c-9a60-3cb571b5fbe3">
+<img width="410" alt="스크린샷 2024-04-02 오후 10 07 19" src="https://github.com/hongkikii/document/assets/110226866/43363d9e-c5d0-495f-90a7-ce0dc70bcae9">
