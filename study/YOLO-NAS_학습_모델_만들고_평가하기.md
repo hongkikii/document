@@ -282,10 +282,10 @@ val_data = coco_detection_yolo_format_val(
 ```
 train_data.dataset.transforms
 ```
+transforms[0], transforms.pop(2)의 형태로도 이용 가능
 
 <br>
 
-transforms[0], transforms.pop(2)의 형태로도 이용 가능
 
 ### 15. 변환(transformations)을 시각적으로 표시
 
