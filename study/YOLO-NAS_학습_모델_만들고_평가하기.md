@@ -12,7 +12,7 @@
 ```
 
 
-### 2. 모델을 생성하기 위한 설정
+### 2. 모델 생성을 위한 설정 수행
 
 ```
 from super_gradients.training import Trainer
@@ -82,7 +82,7 @@ def unzip(zip_file=None):
 unzip('hituav-a-highaltitude-infrared-thermal-dataset.zip')
 ```
 
-### 5. object detection model 훈련에 사용할 데이터셋의 디렉토리 경로와 클래스 정보 설정
+### 5. 훈련에 사용할 데이터셋의 디렉토리 경로와 클래스 정보 설정
 
 ```
 ROOT_DIR = 'hit-uav'
@@ -133,7 +133,7 @@ def yolo2bbox(bboxes):
   return xmin, ymin, xmax, ymax
 ```
 
-### 10. 바운딩 박스와 클래스 레이블을 시각적으로 그리기
+### 10. 단일 이미지와 레이블 시각화
 
 ```
 def plot_box(image, bboxes, labels):
@@ -192,7 +192,7 @@ def plot_box(image, bboxes, labels):
   return image
 ```
 
-### 11. 이미지와 레이블 시각화
+### 11. 복수 이미지와 레이블 시각화
 
 ```
 def plot(image_path, label_path, num_samples):
