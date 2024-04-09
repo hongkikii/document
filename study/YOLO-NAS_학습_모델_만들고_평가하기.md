@@ -133,7 +133,7 @@ def yolo2bbox(bboxes):
   return xmin, ymin, xmax, ymax
 ```
 
-### 10. 단일 이미지와 레이블 시각화
+### 10. 단일 이미지 시각화
 
 ```
 def plot_box(image, bboxes, labels):
@@ -192,7 +192,7 @@ def plot_box(image, bboxes, labels):
   return image
 ```
 
-### 11. 복수 이미지와 레이블 시각화
+### 11. 복수 이미지 시각화
 
 ```
 def plot(image_path, label_path, num_samples):
