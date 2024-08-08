@@ -1,4 +1,4 @@
-# 💫 HTTP Rule
+# 💫 REST Rule
 
 ## ✔️ Method
 
