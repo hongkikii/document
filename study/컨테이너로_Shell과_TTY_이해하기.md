@@ -102,3 +102,10 @@ mimi@MacBook-Pro-3 ~ % tty
 ```
 
 TTY를 사용하는 걸 알 수 있음
+
+<br>
+<br>
+
+### Ref.
+<15단계로 배우는 도커와 쿠버네티스>  
+https://www.44bits.io/ko/keyword/command-line-interface-cli-shell-and-terminal
